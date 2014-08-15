@@ -56,6 +56,10 @@
 #pragma mark - Public Methods
 
 - (SSN *)getSSN {
+    if (self.ssn.length < kSSNLength) {
+        return nil;
+    }
+    
     NSArray *ssnSplitted = [self splitSSN];
     if (ssnSplitted.count != 3) {
         return nil;
