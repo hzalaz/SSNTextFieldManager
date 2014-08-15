@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF3ED9C9199EABA000FD1343 /* SSN.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3ED9C6199EABA000FD1343 /* SSN.m */; };
+		DF3ED9CA199EABA000FD1343 /* SSNTextFieldDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3ED9C8199EABA000FD1343 /* SSNTextFieldDelegate.m */; };
 		DFC9A776199E95B8008E638E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC9A775199E95B8008E638E /* Foundation.framework */; };
 		DFC9A778199E95B8008E638E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC9A777199E95B8008E638E /* CoreGraphics.framework */; };
 		DFC9A77A199E95B8008E638E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC9A779199E95B8008E638E /* UIKit.framework */; };
@@ -21,8 +23,6 @@
 		DFC9A797199E95B8008E638E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC9A779199E95B8008E638E /* UIKit.framework */; };
 		DFC9A79F199E95B8008E638E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DFC9A79D199E95B8008E638E /* InfoPlist.strings */; };
 		DFC9A7A1199E95B8008E638E /* SSNTextFieldExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC9A7A0199E95B8008E638E /* SSNTextFieldExampleTests.m */; };
-		DFC9A7B1199E97B6008E638E /* SSNTextFieldDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC9A7B0199E97B6008E638E /* SSNTextFieldDelegate.m */; };
-		DFC9A7B4199EA0D1008E638E /* SSN.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC9A7B3199EA0D1008E638E /* SSN.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DF3ED9C5199EABA000FD1343 /* SSN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSN.h; sourceTree = "<group>"; };
+		DF3ED9C6199EABA000FD1343 /* SSN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSN.m; sourceTree = "<group>"; };
+		DF3ED9C7199EABA000FD1343 /* SSNTextFieldDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSNTextFieldDelegate.h; sourceTree = "<group>"; };
+		DF3ED9C8199EABA000FD1343 /* SSNTextFieldDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSNTextFieldDelegate.m; sourceTree = "<group>"; };
 		DFC9A772199E95B8008E638E /* SSNTextFieldExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSNTextFieldExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFC9A775199E95B8008E638E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DFC9A777199E95B8008E638E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -55,10 +59,6 @@
 		DFC9A79C199E95B8008E638E /* SSNTextFieldExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SSNTextFieldExampleTests-Info.plist"; sourceTree = "<group>"; };
 		DFC9A79E199E95B8008E638E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DFC9A7A0199E95B8008E638E /* SSNTextFieldExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSNTextFieldExampleTests.m; sourceTree = "<group>"; };
-		DFC9A7AF199E97B6008E638E /* SSNTextFieldDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSNTextFieldDelegate.h; sourceTree = "<group>"; };
-		DFC9A7B0199E97B6008E638E /* SSNTextFieldDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSNTextFieldDelegate.m; sourceTree = "<group>"; };
-		DFC9A7B2199EA0D1008E638E /* SSN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSN.h; sourceTree = "<group>"; };
-		DFC9A7B3199EA0D1008E638E /* SSN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSN.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +85,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF3ED9C4199EABA000FD1343 /* SSNManager */ = {
+			isa = PBXGroup;
+			children = (
+				DF3ED9C5199EABA000FD1343 /* SSN.h */,
+				DF3ED9C6199EABA000FD1343 /* SSN.m */,
+				DF3ED9C7199EABA000FD1343 /* SSNTextFieldDelegate.h */,
+				DF3ED9C8199EABA000FD1343 /* SSNTextFieldDelegate.m */,
+			);
+			path = SSNManager;
+			sourceTree = SOURCE_ROOT;
+		};
 		DFC9A769199E95B8008E638E = {
 			isa = PBXGroup;
 			children = (
@@ -118,7 +129,7 @@
 		DFC9A77B199E95B8008E638E /* SSNTextFieldExample */ = {
 			isa = PBXGroup;
 			children = (
-				DFC9A7AE199E9793008E638E /* SSNTextFieldDelegate */,
+				DF3ED9C4199EABA000FD1343 /* SSNManager */,
 				DFC9A784199E95B8008E638E /* AppDelegate.h */,
 				DFC9A785199E95B8008E638E /* AppDelegate.m */,
 				DFC9A787199E95B8008E638E /* Main.storyboard */,
@@ -157,17 +168,6 @@
 				DFC9A79D199E95B8008E638E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		DFC9A7AE199E9793008E638E /* SSNTextFieldDelegate */ = {
-			isa = PBXGroup;
-			children = (
-				DFC9A7AF199E97B6008E638E /* SSNTextFieldDelegate.h */,
-				DFC9A7B0199E97B6008E638E /* SSNTextFieldDelegate.m */,
-				DFC9A7B2199EA0D1008E638E /* SSN.h */,
-				DFC9A7B3199EA0D1008E638E /* SSN.m */,
-			);
-			path = SSNTextFieldDelegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,9 +267,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFC9A7B4199EA0D1008E638E /* SSN.m in Sources */,
+				DF3ED9C9199EABA000FD1343 /* SSN.m in Sources */,
+				DF3ED9CA199EABA000FD1343 /* SSNTextFieldDelegate.m in Sources */,
 				DFC9A78C199E95B8008E638E /* ViewController.m in Sources */,
-				DFC9A7B1199E97B6008E638E /* SSNTextFieldDelegate.m in Sources */,
 				DFC9A786199E95B8008E638E /* AppDelegate.m in Sources */,
 				DFC9A782199E95B8008E638E /* main.m in Sources */,
 			);
@@ -476,6 +476,7 @@
 				DFC9A7A6199E95B8008E638E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DFC9A7A7199E95B8008E638E /* Build configuration list for PBXNativeTarget "SSNTextFieldExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -484,6 +485,7 @@
 				DFC9A7A9199E95B8008E638E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

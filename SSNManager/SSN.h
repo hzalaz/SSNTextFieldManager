@@ -16,7 +16,7 @@
 @property (strong, nonatomic) NSString *areaNumber;
 
 /**
- Gropu Code component of SSN
+ Group Code component of SSN
  */
 @property (strong, nonatomic) NSString *groupCode;
 

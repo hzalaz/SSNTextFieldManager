@@ -32,13 +32,13 @@
         if (textField.text.length == kFirstSlashIndexToAdd || textField.text.length == kSecondSlashIndexToAdd) {
             textField.text = [NSString stringWithFormat:@"%@-%@", textField.text, string];
             return NO;
-        } else if (completeText.length == kSSNLength) {
+        } else if (completeText.length == kSSNLength + 1) {
             self.ssn = textField.text;
             NSLog(@"SSN %@", self.ssn);
             return NO;
         }
     } else {                        // The user deleted a character
-        if (completeText.length == kFirstSlashIndexToAdd+1 || completeText.length == kSecondSlashIndexToAdd+1) {
+        if (completeText.length == kFirstSlashIndexToAdd + 1 || completeText.length == kSecondSlashIndexToAdd + 1) {
             textField.text = [completeText substringToIndex:completeText.length - 1];
             return NO;
         }
@@ -56,7 +56,7 @@
 #pragma mark - Public Methods
 
 - (SSN *)getSSN {
-    if (self.ssn.length < kSSNLength) {
+    if (self.ssn.length != kSSNLength) {
         return nil;
     }
     

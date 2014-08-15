@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class SSNTextFieldDelegate;
+
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *textField;
+@property (strong, nonatomic) IBOutlet SSNTextFieldDelegate *textFieldDelegate;
+@property (weak, nonatomic) IBOutlet UILabel *result;
+
+- (IBAction)checkSSN:(id)sender;
 @end
