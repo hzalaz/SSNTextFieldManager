@@ -21,6 +21,7 @@
 		DFC9A797199E95B8008E638E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC9A779199E95B8008E638E /* UIKit.framework */; };
 		DFC9A79F199E95B8008E638E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DFC9A79D199E95B8008E638E /* InfoPlist.strings */; };
 		DFC9A7A1199E95B8008E638E /* SSNTextFieldExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC9A7A0199E95B8008E638E /* SSNTextFieldExampleTests.m */; };
+		DFC9A7B1199E97B6008E638E /* SSNTextFieldDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC9A7B0199E97B6008E638E /* SSNTextFieldDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		DFC9A79C199E95B8008E638E /* SSNTextFieldExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SSNTextFieldExampleTests-Info.plist"; sourceTree = "<group>"; };
 		DFC9A79E199E95B8008E638E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DFC9A7A0199E95B8008E638E /* SSNTextFieldExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSNTextFieldExampleTests.m; sourceTree = "<group>"; };
+		DFC9A7AF199E97B6008E638E /* SSNTextFieldDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSNTextFieldDelegate.h; sourceTree = "<group>"; };
+		DFC9A7B0199E97B6008E638E /* SSNTextFieldDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSNTextFieldDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,7 @@
 		DFC9A77B199E95B8008E638E /* SSNTextFieldExample */ = {
 			isa = PBXGroup;
 			children = (
+				DFC9A7AE199E9793008E638E /* SSNTextFieldDelegate */,
 				DFC9A784199E95B8008E638E /* AppDelegate.h */,
 				DFC9A785199E95B8008E638E /* AppDelegate.m */,
 				DFC9A787199E95B8008E638E /* Main.storyboard */,
@@ -150,6 +154,15 @@
 				DFC9A79D199E95B8008E638E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DFC9A7AE199E9793008E638E /* SSNTextFieldDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				DFC9A7AF199E97B6008E638E /* SSNTextFieldDelegate.h */,
+				DFC9A7B0199E97B6008E638E /* SSNTextFieldDelegate.m */,
+			);
+			path = SSNTextFieldDelegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFC9A78C199E95B8008E638E /* ViewController.m in Sources */,
+				DFC9A7B1199E97B6008E638E /* SSNTextFieldDelegate.m in Sources */,
 				DFC9A786199E95B8008E638E /* AppDelegate.m in Sources */,
 				DFC9A782199E95B8008E638E /* main.m in Sources */,
 			);
