@@ -1,6 +1,6 @@
 # SSNTextFieldManager
 
-It's a simple **UITextFieldDelegate** formmatter for [Social Security Number](http://www.ssa.gov/ssnumber/) with  **XXX-XX-XXXX** format.
+It's a simple **UITextFieldDelegate** formatter for [Social Security Number](http://www.ssa.gov/ssnumber/) with  **XXX-XX-XXXX** format.
 
 ## How to use
 
