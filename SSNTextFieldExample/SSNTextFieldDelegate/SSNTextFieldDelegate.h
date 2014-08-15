@@ -51,7 +51,6 @@
 
 @interface SSNTextFieldDelegate : NSObject <UITextFieldDelegate>
 
-- (SSN *)getSSNComponents;
-- (BOOL)isSSNValid;
+- (SSN *)getSSN;
 
 @end

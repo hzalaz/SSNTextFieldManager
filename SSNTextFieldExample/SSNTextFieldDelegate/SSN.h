@@ -16,4 +16,6 @@
 
 - (instancetype)initWithAreaNumber:(NSString *)areaNumber groupCode:(NSString *)groupCode serialNumber:(NSString *)serialNumber;
 
+- (BOOL)isValid;
+
 @end

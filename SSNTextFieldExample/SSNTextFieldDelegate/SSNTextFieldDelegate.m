@@ -47,18 +47,16 @@
     return YES;
 }
 
-#pragma mark - Public Methods
+#pragma mark - Private Methods
 
-- (BOOL)isSSNValid {
-    return YES;
+- (NSArray *)splitSSN {
+    return [self.ssn componentsSeparatedByString:@"-"];
 }
 
-- (SSN *)getSSNComponents {
-    if (![self isSSNValid]) {
-        return nil;
-    }
-    
-    NSArray *ssnSplitted = [self.ssn componentsSeparatedByString:@"-"];
+#pragma mark - Public Methods
+
+- (SSN *)getSSN {
+    NSArray *ssnSplitted = [self splitSSN];
     if (ssnSplitted.count != 3) {
         return nil;
     }
