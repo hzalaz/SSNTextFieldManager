@@ -7,6 +7,7 @@
 //
 
 #import "SSNTextFieldDelegate.h"
+#import "SSN.h"
 
 #define kFirstSlashIndexToAdd    3
 #define kSecondSlashIndexToAdd   6
@@ -44,6 +45,25 @@
     }
     
     return YES;
+}
+
+#pragma mark - Public Methods
+
+- (BOOL)isSSNValid {
+    return YES;
+}
+
+- (SSN *)getSSNComponents {
+    if (![self isSSNValid]) {
+        return nil;
+    }
+    
+    NSArray *ssnSplitted = [self.ssn componentsSeparatedByString:@"-"];
+    if (ssnSplitted.count != 3) {
+        return nil;
+    }
+    
+    return [[SSN alloc] initWithAreaNumber:ssnSplitted[0] groupCode:ssnSplitted[1] serialNumber:ssnSplitted[2]];
 }
 
 @end

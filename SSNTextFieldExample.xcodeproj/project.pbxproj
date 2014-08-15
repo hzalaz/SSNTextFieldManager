@@ -22,6 +22,7 @@
 		DFC9A79F199E95B8008E638E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DFC9A79D199E95B8008E638E /* InfoPlist.strings */; };
 		DFC9A7A1199E95B8008E638E /* SSNTextFieldExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC9A7A0199E95B8008E638E /* SSNTextFieldExampleTests.m */; };
 		DFC9A7B1199E97B6008E638E /* SSNTextFieldDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC9A7B0199E97B6008E638E /* SSNTextFieldDelegate.m */; };
+		DFC9A7B4199EA0D1008E638E /* SSN.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC9A7B3199EA0D1008E638E /* SSN.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		DFC9A7A0199E95B8008E638E /* SSNTextFieldExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSNTextFieldExampleTests.m; sourceTree = "<group>"; };
 		DFC9A7AF199E97B6008E638E /* SSNTextFieldDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSNTextFieldDelegate.h; sourceTree = "<group>"; };
 		DFC9A7B0199E97B6008E638E /* SSNTextFieldDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSNTextFieldDelegate.m; sourceTree = "<group>"; };
+		DFC9A7B2199EA0D1008E638E /* SSN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSN.h; sourceTree = "<group>"; };
+		DFC9A7B3199EA0D1008E638E /* SSN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSN.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +164,8 @@
 			children = (
 				DFC9A7AF199E97B6008E638E /* SSNTextFieldDelegate.h */,
 				DFC9A7B0199E97B6008E638E /* SSNTextFieldDelegate.m */,
+				DFC9A7B2199EA0D1008E638E /* SSN.h */,
+				DFC9A7B3199EA0D1008E638E /* SSN.m */,
 			);
 			path = SSNTextFieldDelegate;
 			sourceTree = "<group>";
@@ -262,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFC9A7B4199EA0D1008E638E /* SSN.m in Sources */,
 				DFC9A78C199E95B8008E638E /* ViewController.m in Sources */,
 				DFC9A7B1199E97B6008E638E /* SSNTextFieldDelegate.m in Sources */,
 				DFC9A786199E95B8008E638E /* AppDelegate.m in Sources */,

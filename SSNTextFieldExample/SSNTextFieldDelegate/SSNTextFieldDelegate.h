@@ -47,9 +47,11 @@
 
 #import <Foundation/Foundation.h>
 
+@class SSN;
+
 @interface SSNTextFieldDelegate : NSObject <UITextFieldDelegate>
 
-- (NSDictionary *)getSSNComponents;
+- (SSN *)getSSNComponents;
 - (BOOL)isSSNValid;
 
 @end
