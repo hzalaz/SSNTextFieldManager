@@ -34,7 +34,6 @@
             return NO;
         } else if (completeText.length == kSSNLength + 1) {
             self.ssn = textField.text;
-            NSLog(@"SSN %@", self.ssn);
             return NO;
         }
     } else {                        // The user deleted a character
