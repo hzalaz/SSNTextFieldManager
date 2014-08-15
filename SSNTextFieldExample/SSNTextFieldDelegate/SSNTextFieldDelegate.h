@@ -51,6 +51,12 @@
 
 @interface SSNTextFieldDelegate : NSObject <UITextFieldDelegate>
 
+/**
+ Splitted the text in a SSN Object, divided Area Number, Group Code and Serial Number
+ 
+ @return SSN object with each component divided
+ */
+
 - (SSN *)getSSN;
 
 @end
